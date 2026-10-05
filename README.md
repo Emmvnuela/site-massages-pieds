@@ -7,8 +7,10 @@ Voir le site en ligne : https://github.com/Emmvnuela/site-massages-pieds.git
 
 ## Aperçu
 
-screenshots/reservation.png
-screenshots/mobile.png
+![Version mobile](screenshots/mobile.png)
+
+![Réservation](screenshots/reservation.png)
+
 ## Fonctions
 - Navigation entre pages (accueil, massages, soins des pieds, boutique, à propos, réservation)
 - Réservation avec créneaux et récapitulatif
