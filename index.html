@@ -1,0 +1,49 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><title>Maison Pieds &amp; Massages</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Italiana&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap">
+<link rel="stylesheet" href="style.css"></head><body>
+<div class="promo" id="pb"></div>
+<header><a class="logo" href="#accueil">Maison [Ton nom]</a>
+<nav id="nav"><a href="#accueil">Accueil</a><a href="#massages">Massages</a><a href="#pieds">Soins des pieds</a><a href="#boutique">Boutique</a><a href="#apropos">À propos</a><a href="#rdv">Prendre rendez-vous</a></nav></header>
+
+<main>
+<section class="page" id="accueil">
+<div class="band t hero"><div class="wrap two"><div><h1>Prendre soin de vous, de la tête aux pieds</h1><p>Massages et soins esthétiques des pieds, pensés pour votre bien-être.</p><br><a class="btn" href="#rdv">Réserver un soin</a></div>
+<div class="collage"><img class="a" src="img/photo-1.jpg" alt=""><img class="b" src="img/photo-2.jpg" alt=""></div></div></div>
+<div class="band"><div class="wrap two"><img class="pic" src="img/photo-3.jpg" alt=""><div><h2>Deux univers, un même soin</h2><p>Des massages relaxants réservés aux femmes, et des soins des pieds pour retrouver douceur et légèreté. Chaque séance est adaptée à vos besoins.</p><p><a class="btn d" href="#massages">Massages</a> &nbsp;<a class="btn d" href="#pieds">Soins des pieds</a></p></div></div></div>
+<div class="band gr"><div class="wrap"><h2>Ce que vous trouverez ici</h2>
+<div class="grid" style="margin-top:2rem"><div class="list"><div class="row"><span>Réservation en ligne, créneaux à jour</span></div></div><div class="list"><div class="row"><span>Paiement sécurisé à la réservation</span></div></div><div class="list"><div class="row"><span>Produits sélectionnés avec soin</span></div></div></div></div></div>
+</section>
+
+<section class="page" id="massages"><div class="band t"><div class="wrap"><h1>Massages</h1><p>Réservés exclusivement aux femmes pour le moment.</p></div></div>
+<div class="band"><div class="wrap two"><div><div class="list" id="lm"></div><div class="note">Ces massages sont proposés uniquement aux femmes. Vous le confirmerez lors de la réservation.</div><a class="btn d" href="#rdv">Réserver un massage</a></div><img class="pic" src="img/photo-4.jpg" alt=""></div></div></section>
+
+<section class="page" id="pieds"><div class="band t"><div class="wrap"><h1>Soins esthétiques des pieds</h1></div></div>
+<div class="band"><div class="wrap"><div class="grid" id="gp"></div><br><div class="note">Photos d'exemple : à remplacer par tes propres photos de pieds.</div></div></div></section>
+
+<section class="page" id="boutique"><div class="band t"><div class="wrap"><h1>Boutique</h1><p>Trois produits pour prolonger le soin à la maison.</p></div></div>
+<div class="band"><div class="wrap"><div class="grid" id="gb"></div></div></div></section>
+
+<section class="page" id="apropos"><div class="band t"><div class="wrap two"><div><h1>À propos de moi</h1><p>Bonjour, je suis [Prénom], praticienne en massage et en soins des pieds. [Quelques phrases de présentation.]</p></div><img class="pic" src="img/photo-5.jpg" alt=""></div></div>
+<div class="band"><div class="wrap two"><img class="pic" src="img/photo-6.jpg" alt=""><div><h2>Ma formation</h2><p>[Diplômes, écoles, années d'expérience.]</p><h2>Ma philosophie</h2><p>[Écoute, douceur, un soin adapté à chaque personne.]</p></div></div></div></section>
+
+<section class="page" id="rdv"><div class="band"><div class="wrap two" style="align-items:start"><div>
+<h1>Prendre rendez-vous</h1>
+<label for="sv">1. Choisissez un soin</label><select id="sv"></select>
+<div class="note" id="wn" style="display:none"><label style="margin:0"><input type="checkbox" id="wc"> Je confirme être une femme. Les massages sont réservés aux femmes.</label></div>
+<label>2. Choisissez un créneau</label><div class="slots" id="sl"></div>
+<label>3. Vos coordonnées</label><input type="text" placeholder="Prénom et nom" id="nm"><br><br><input type="email" placeholder="E-mail" id="em">
+<label>4. Moyen de paiement</label><div class="pay"><label><input type="radio" name="p" checked> Carte bancaire</label><label><input type="radio" name="p"> PayPal</label><label><input type="radio" name="p"> Apple Pay / Google Pay</label><label><input type="radio" name="p"> Virement</label></div>
+</div><div style="position:sticky;top:90px"><h2>Votre réservation</h2><div class="list"><div class="row"><span>Soin</span><b id="rs">–</b></div><div class="row"><span>Créneau</span><b id="rc">–</b></div><div class="row" id="rr" style="display:none"><span>Promotion</span><b id="rp"></b></div><div class="row"><span>Total</span><b id="rt">–</b></div></div><br>
+<button class="btn d" id="go">Confirmer et payer</button>
+<div class="ok" id="ok"></div><p style="font-size:.9rem;opacity:.8">Aperçu de design : le paiement et la validation seront branchés à l'étape suivante.</p></div></div></div></section>
+
+<section class="page" id="admin"><div class="band"><div class="wrap" style="max-width:720px"><h1>Mon espace</h1><p>Aperçu de ce que tu pourras régler toi-même.</p>
+<h2>Promotions</h2><div id="ap"></div>
+<h2 style="margin-top:2.5rem">Mes disponibilités de la semaine</h2><div class="slots" id="as"></div><br>
+<label>Ajouter un créneau</label><div class="slots"><select id="ad" style="width:auto"></select><select id="ah" style="width:auto"></select><button class="btn d" id="aa">Ajouter</button></div></div></div></section>
+</main>
+
+<footer class="gr"><div class="wrap"><div><h3>Contact</h3><p>[Téléphone]<br>[E-mail]<br>Instagram · Facebook</p></div><div><h3>Paiements acceptés</h3><p>Carte bancaire, PayPal, Apple Pay, Google Pay, virement</p></div><div><p><a href="#admin" style="color:inherit">Espace praticienne</a><br>Mentions légales</p></div></div></footer>
+
+<script src="script.js"></script></body></html>

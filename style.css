@@ -1,0 +1,39 @@
+:root{--t:#592609;--s:#DCD8D1;--g:#2F362E;--c:#F3EFE8;--bg:var(--s);--tx:var(--g);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--s:#2a2d28;--c:#273423;--tx:#ece7de}}
+:root[data-theme=dark]{--s:#2a2d28;--c:#1f221e;--tx:#ece7de}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--s);color:var(--tx);font:19px/1.6 'EB Garamond',Georgia,serif}
+h1,h2,h3{font-family:Italiana,'Cormorant Garamond',Georgia,serif;font-weight:400;line-height:1.1;margin:0 0 .5em}
+h1{font-size:clamp(2.4rem,6vw,4.2rem)}h2{font-size:clamp(1.9rem,4vw,2.8rem)}h3{font-size:1.7rem}
+img{max-width:100%;display:block;object-fit:cover}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--t);color:#F3EAE0;display:flex;flex-wrap:wrap;gap:.5rem 2rem;align-items:center;justify-content:space-between;padding:.9rem 5vw}
+.logo{font-family:Italiana,serif;font-size:1.5rem;letter-spacing:.06em;color:inherit;text-decoration:none}
+nav{display:flex;flex-wrap:wrap;gap:.3rem 1.4rem}nav a{color:inherit;text-decoration:none;font-size:1rem;padding:.2rem 0;border-bottom:1px solid transparent}
+nav a.on,nav a:hover{border-color:currentColor}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid #fff;outline-offset:3px}
+.page{display:none}.page.on{display:block}
+.band{padding:5rem 5vw}.t{background:var(--t);color:#F3EAE0}.gr{background:var(--g);color:#E9E4DA}
+.wrap{max-width:1100px;margin:0 auto}.two{display:grid;grid-template-columns:1fr 1fr;gap:4vw;align-items:center}
+.btn{display:inline-block;background:var(--c);color:var(--t);border:0;padding:.9rem 1.6rem;font:inherit;letter-spacing:.06em;text-transform:uppercase;font-size:.95rem;cursor:pointer;text-decoration:none}
+.t .btn{background:#E5E0D8}.btn.d{background:var(--t);color:#F3EAE0}
+.hero{min-height:82vh;display:flex;align-items:center}.hero p{font-size:1.4rem;max-width:26ch}
+.collage{position:relative;height:560px}.collage img{position:absolute}.collage .a{width:62%;height:84%;top:0;left:8%}.collage .b{width:44%;height:60%;right:0;bottom:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2rem}
+.card{border:1px solid currentColor;padding:14px;display:flex;flex-direction:column}.card img{height:300px;width:100%}
+.card small{display:block;text-align:center;letter-spacing:.08em;text-transform:uppercase;font-size:.85rem;margin:.9rem 0;opacity:.85}
+.card .nm{border-top:1px solid currentColor;padding:1rem 0 .3rem;text-align:center}.card .nm h3{margin:0}
+.card .pr{text-align:center;margin-bottom:.8rem}.card .btn{margin:auto auto 0}
+.list{border-top:1px solid currentColor}.row{display:flex;justify-content:space-between;gap:1rem;padding:1.1rem 0;border-bottom:1px solid currentColor;align-items:baseline}
+.row p{margin:0;opacity:.8;font-size:.95rem}.row b{font-weight:500;white-space:nowrap}
+.note{border:1px solid var(--t);padding:1rem 1.2rem;margin:1.5rem 0}
+.promo{background:var(--g);color:#E9E4DA;text-align:center;padding:.5rem;font-size:.95rem;display:none}
+.quote{border-left:1px solid #F3EAE0;padding-left:1.2rem}
+.pic{height:520px;width:100%}
+label{display:block;margin:1rem 0 .3rem}select,input[type=text],input[type=email]{width:100%;font:inherit;padding:.7rem;background:var(--c);color:var(--tx);border:1px solid var(--g)}
+.slots{display:flex;flex-wrap:wrap;gap:.5rem}.slot{border:1px solid var(--tx);background:transparent;color:inherit;padding:.5rem .9rem;font:inherit;cursor:pointer}
+.slot.on{background:var(--t);color:#fff;border-color:var(--t)}
+.pay{display:flex;flex-wrap:wrap;gap:.6rem}.pay label{margin:0;border:1px solid var(--tx);padding:.5rem .9rem;cursor:pointer}
+.sw{display:flex;justify-content:space-between;align-items:center;padding:1rem 0;border-bottom:1px solid var(--tx)}
+.sw input{width:22px;height:22px;accent-color:var(--t)}
+footer{padding:3rem 5vw}footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1.5rem}
+.ok{display:none;margin-top:1.5rem;padding:1rem;background:var(--g);color:#fff}
+@media(max-width:760px){.two{grid-template-columns:1fr}.collage{height:420px}.band{padding:3rem 6vw}.pic{height:340px}}
